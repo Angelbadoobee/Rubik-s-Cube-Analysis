@@ -31,7 +31,7 @@ A futuristic, interactive web dashboard for analyzing Rubik's Cube solving perfo
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/rubiks-analytics-dashboard.git
+   git clone https://github.com/Angelbadoobee/rubiks-analytics-dashboard.git
    cd rubiks-analytics-dashboard
    ```
 2. **Open in browser:**
@@ -65,3 +65,14 @@ Date,Solve Number,Cube Type,Time (mm:ss),Session ID,Session Averages
 - PapaParse — CSV parsing
 - Google Fonts: Orbitron & Share Tech Mono
 - Responsive & Neon Cyberpunk UI
+
+## Screenshots
+<img width="1220" height="589" alt="image" src="https://github.com/user-attachments/assets/e250f41e-f7da-45a2-9c57-877bdf2c4c0a" />
+
+<img width="1233" height="249" alt="image" src="https://github.com/user-attachments/assets/ee2c550a-76e9-4e7d-9e39-9cf8d03bece7" />
+
+<img width="1225" height="615" alt="image" src="https://github.com/user-attachments/assets/b1318d7e-5a44-437a-a900-2dce768665be" />
+
+<img width="1218" height="623" alt="image" src="https://github.com/user-attachments/assets/f8cc1509-179c-4e85-9916-32436c662b2a" />
+
+<img width="1240" height="500" alt="image" src="https://github.com/user-attachments/assets/4b86806d-78f5-446a-a6d6-30f32d54366d" />
