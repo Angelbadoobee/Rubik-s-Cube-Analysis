@@ -31,8 +31,8 @@ As I continue to practice my basic HTML, CSS, and JavaScript and try to meld tha
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/Angelbadoobee/rubiks-analytics-dashboard.git
-   cd rubiks-analytics-dashboard
+   git clone https://github.com/Angelbadoobee/Rubik-s-Cube-Analysis.git
+   cd Rubik-s-Cube-Analysis
    ```
 2. **Open in browser:**
 Simply open index.html in any modern browser (Chrome, Firefox, Edge).
