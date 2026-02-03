@@ -2,7 +2,7 @@
 
 ![Rubik Cube Icon](rubik.png)
 
-A futuristic, interactive web dashboard for analyzing Rubik's Cube solving performance. Upload your session data (CSV or XLSX) and gain insights into solve times, consistency, rolling averages, session comparisons, and performance trends.
+As I continue to practice my basic HTML, CSS, and JavaScript and try to meld that with my newfound love of Data Analytics, I find myself trying to create projects that mesh my interests with this endeavor and why not do a Rubik's cube project? Something that has been really important to my life for 10+ years. And thus, this site was born, a futuristic, interactive web dashboard for analyzing Rubik's Cube solving performance. Upload your session data (CSV or XLSX) and gain insights into solve times, consistency, rolling averages, session comparisons, and performance trends.
 
 ---
 
