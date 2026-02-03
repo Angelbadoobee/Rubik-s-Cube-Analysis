@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angel's Rubik's Cube Analytics
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="rubik.png">
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Angel's Cube Analytics</h1>
+            <p class="subtitle">Performance Metrics System</p>
+        </header>
+
+        <div class="upload-section">
+            <h2>[ Data Upload ]</h2>
+            <div class="file-input-wrapper">
+                <input type="file" id="fileInput" accept=".csv,.xlsx">
+                <label for="fileInput" class="file-input-label">Select Dataset</label>
+            </div>
+            <div id="fileInfo" class="file-info hidden">
+                <strong>Dataset Loaded:</strong> <span id="fileName"></span><br>
+                <strong>Records:</strong> <span id="recordCount"></span> solves
+            </div>
+        </div>
+
+        <div id="mainContent" class="hidden">
+            <div class="controls">
+                <div class="control-group">
+                    <label for="startDate">Start Date</label>
+                    <input type="date" id="startDate">
+                </div>
+                <div class="control-group">
+                    <label for="endDate">End Date</label>
+                    <input type="date" id="endDate">
+                </div>
+                <div class="control-group">
+                    <label for="cubeType">Cube Type</label>
+                    <select id="cubeType">
+                        <option value="all">All Types</option>
+                    </select>
+                </div>
+                <div class="control-group">
+                    <label for="sessionFilter">Session</label>
+                    <select id="sessionFilter">
+                        <option value="all">All Sessions</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-label">Best Time</div>
+                    <div class="stat-value" id="bestTime">--</div>
+                    <div class="stat-change" id="bestTimeChange"></div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Average Time</div>
+                    <div class="stat-value" id="avgTime">--</div>
+                    <div class="stat-change" id="avgTimeChange"></div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Total Solves</div>
+                    <div class="stat-value" id="totalSolves">--</div>
+                    <div class="stat-change" id="totalSolvesInfo"></div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Consistency</div>
+                    <div class="stat-value" id="consistency">--</div>
+                    <div class="stat-change" id="consistencyChange"></div>
+                </div>
+            </div>
+
+            <div class="chart-container">
+                <h3>[ Solve Time Progression ]</h3>
+                <div id="progressionChart" class="chart"></div>
+            </div>
+
+            <div class="chart-container">
+                <h3>[ Rolling Average Trend ]</h3>
+                <div id="rollingAvgChart" class="chart"></div>
+            </div>
+
+            <div class="chart-container">
+                <h3>[ Session Performance Analysis ]</h3>
+                <div id="sessionBoxPlot" class="chart"></div>
+            </div>
+
+            <div class="chart-container">
+                <h3>[ Solve Distribution ]</h3>
+                <div id="histogramChart" class="chart"></div>
+            </div>
+
+            <div class="chart-container">
+                <h3>[ Performance Heatmap ]</h3>
+                <div id="heatmapChart" class="chart"></div>
+            </div>
+
+            <div class="insights">
+                <h3>[ Insights & Analysis ]</h3>
+                <div id="insightsContent">
+                    <div class="loading">Analyzing performance data...</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- External Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/plotly.js-dist@2.27.0/plotly.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+    
+    <!-- Application Script -->
+    <script src="app.js"></script>
+</body>
+</html>
